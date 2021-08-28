@@ -3,7 +3,7 @@ import axios from "axios";
 import SingleContent from "../../Components/SingleContent/SingleContent";
 import CustomPagination from "../../Components/Pagination/CustomPagination";
 import Genres from "../../Components/Genres/Genres";
-import useGenre from "../../Components/hooks/useGenre";
+import useGenre from "../../hooks/useGenre";
 
 import "./Movies.css";
 
