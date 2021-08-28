@@ -25,6 +25,7 @@ const Movies = () => {
   };
 
   useEffect(() => {
+    window.scroll(0, 0);
     fetchMovies();
     // eslint-disable-next-line
   }, [page, genreforURL]);
@@ -47,7 +48,7 @@ const Movies = () => {
             id={movie.id}
             poster={movie.poster_path}
             title={movie.title}
-            date={movie.first_air_date}
+            date={movie.release_date}
             media_type="Movie"
             vote_average={movie.vote_average}
           />
