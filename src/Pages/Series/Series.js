@@ -5,8 +5,6 @@ import CustomPagination from "../../Components/Pagination/CustomPagination";
 import Genres from "../../Components/Genres/Genres";
 import useGenre from "../../hooks/useGenre";
 
-import "./Series.css";
-
 const Series = () => {
   const [series, setSeries] = useState([]);
   const [page, setPage] = useState(1);
@@ -42,7 +40,7 @@ const Series = () => {
         selectedGenres={selectedGenres}
         setSelectedGenres={setSelectedGenres}
       />
-      <div className="series">
+      <div className="ContentWrapper">
         {series.map((s) => (
           <SingleContent
             key={s.id}

@@ -3,8 +3,6 @@ import axios from "axios";
 import SingleContent from "../../Components/SingleContent/SingleContent";
 import CustomPagination from "../../Components/Pagination/CustomPagination";
 
-import "./Trending.css";
-
 const Trending = () => {
   const [page, setPage] = useState(1);
   const [content, setContent] = useState([]);
@@ -24,7 +22,7 @@ const Trending = () => {
   return (
     <div>
       <span className="pageTitle">Trending</span>
-      <div className="trending">
+      <div className="ContentWrapper">
         {content.map((c) => (
           <SingleContent
             key={c.id}
